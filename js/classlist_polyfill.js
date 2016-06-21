@@ -68,4 +68,7 @@
   defineElementGetter(HTMLElement.prototype, 'classList', function () {
     return new DOMTokenList(this);
   });
+  Math.log2 = Math.log2 || function(x) {
+        return Math.log(x) / Math.LN2;
+      };
 })();
