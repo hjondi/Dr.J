@@ -15,4 +15,4 @@ Changes and improvements are more than welcome! Feel free to fork and open a pul
 
 
 ## License
-2048 is licensed under the [MIT license.](https://github.com/hjondi/K.O/blob/gh-pages/LICENSE.txt)
+K.O. is licensed under the [MIT license.](https://github.com/hjondi/K.O/blob/gh-pages/LICENSE.txt)
