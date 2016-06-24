@@ -1090,11 +1090,17 @@ hr {
     transform: scale(1) translateZ(0);
     opacity: 1;
     margin-top: 10px; } }
+.app-notice-container {
+  display: none;
+}
+.app-notice-container.app-notice {
+  display: block;
+}
 .app-notice {
   position: relative;
-  -webkit-animation: pop-in-big 700ms ease 2s both;
-  -moz-animation: pop-in-big 700ms ease 2s both;
-  animation: pop-in-big 700ms ease 2s both;
+  -webkit-animation: pop-in-big 700ms ease 10ms both;
+  -moz-animation: pop-in-big 700ms ease 10ms both;
+  animation: pop-in-big 700ms ease 10ms both;
   background: #edc53f;
   color: white;
   padding: 18px;

@@ -25,18 +25,18 @@ GameManager.prototype.restart = function () {
 
 //Save the game
 GameManager.prototype.save = function () {
-	this.localStorageManager.setGameState(this.sessionStorageManager.getGameState());
-	//this.sessionStorageManager.continueGame();
-	//this.setup(); // in setup it takes session status X wrong
-}
+  this.localStorageManager.setGameState(this.sessionStorageManager.getGameState());
+  this.actuator.showNotice();
+};
 
 GameManager.prototype.load = function () {
+  this.actuator.continueGame(); // Clear the game won/lost message
   this.sessionStorageManager.setGameState(this.localStorageManager.getGameState());
 	this.setup();
-}
+};
 
 
-// Keep playing after winning (allows going over 2048)
+// Keep playing after winning (allows going over K)
 GameManager.prototype.keepPlaying = function () {
   this.keepPlaying = true;
   this.actuator.continueGame(); // Clear the game won/lost message

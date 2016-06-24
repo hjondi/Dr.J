@@ -4,6 +4,7 @@ function HTMLActuator() {
   this.bestContainer    = document.querySelector(".best-container");
   this.messageContainer = document.querySelector(".game-message");
   this.sharingContainer = document.querySelector(".score-sharing");
+  this.appNoticeContainer = document.querySelector(".app-notice-container");
 
   this.score = 0;
 }
@@ -165,4 +166,12 @@ HTMLActuator.prototype.scoreTweetButton = function () {
   tweet.setAttribute("data-text", text);
 
   return tweet;
+};
+HTMLActuator.prototype.showNotice = function (){
+  var self = this;
+  self.appNoticeContainer.classList.add('app-notice');
+  setTimeout(function () {
+        self.appNoticeContainer.classList.remove('app-notice');
+      },
+      5000);
 };
