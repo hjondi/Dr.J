@@ -68,7 +68,8 @@ HTMLActuator.prototype.addTile = function (tile) {
   this.applyClasses(wrapper, classes);
 
   inner.classList.add("tile-inner");
-  inner.textContent =  String.fromCharCode(64 + Math.log2(tile.value));
+  //inner.textContent =  String.fromCharCode(64 + Math.log2(tile.value));
+  inner.textContent =  periodicTable[Math.log2(tile.value) - 1].abbreviation;
 
   if (tile.previousPosition) {
     // Make sure that the tile gets rendered in the previous position first

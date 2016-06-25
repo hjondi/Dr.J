@@ -2,11 +2,26 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>K.O.</title>
+  <title>Dr.J</title>
 
   <link href="style/main.css" rel="stylesheet" type="text/css">
-  <link rel="shortcut icon" href="favicon.ico">
-  <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+  <link rel="manifest" href="icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
   <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone 5+ -->
   <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x920.png"  media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone, retina -->
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -19,7 +34,8 @@
 <body>
   <div class="container">
     <div class="heading">
-      <h1 class="title">K.O.</h1>
+      <img style="vertical-align:middle;" src="icons/apple-icon.png" align="middle">
+      <h1 class="title" style="line-height: 250%">Dr.J.</h1>
       <div class="scores-container" style="display: none;">
         <div class="score-container">0</div>
         <div class="best-container">0</div>
@@ -27,7 +43,7 @@
     </div>
 
     <div class="above-game">
-      <p class="game-intro">Join the Letters and get to the <strong>K tile!</strong></p>
+      <p class="game-intro">Join elements and get to the <strong>SODIUM tile!</strong></p>
       <a class="restart-button">New Game</a>
 	  <p class="game-intro"><a class="save-button" style="margin:0 5px">Save current game</a>
 	  <a class="load-button">Load saved game</a></p>
@@ -79,11 +95,11 @@
     </div>
 
     <p class="game-explanation">
-      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same letter touch, they <strong>merge into one!</strong>
+      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same element touch, they <strong>merge into one !</strong>
     </p>
     <hr>
     <p>
-    <strong class="important">Note:</strong> This site is the official version of K.O. You can play it on your phone via <a href="https://git.io/voDA0">https://git.io/voDA0.</a> All other apps or sites are derivatives or fakes, and should be used with caution.
+    <strong class="important">Note:</strong> This site is the official version of Dr.J. You can play it on your phone via <a href="https://git.io/voDA0">https://git.io/voDA0.</a> All other apps or sites are derivatives or fakes, and should be used with caution.
     </p>
     <hr>
     <p>
@@ -91,6 +107,7 @@
     </p>
   </div>
 
+  <script src="js/periodic_table.js"></script>
   <script src="js/bind_polyfill.js"></script>
   <script src="js/classlist_polyfill.js"></script>
   <script src="js/animframe_polyfill.js"></script>
