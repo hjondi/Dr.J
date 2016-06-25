@@ -1,4 +1,7 @@
 # Dr.J
+<p align="center">
+  <img src="icons/apple-icon.png" alt="Screenshot"/>
+</p>
 A small clone of [2048](http://gabrielecirulli.github.io/2048/) based on [1024](https://play.google.com/store/apps/details?id=com.veewo.a1024) and  [Saming's 2048](http://saming.fr/p/2048/) (both clones).
 
 Made just for fun. [Play it here!](https://hjondi.github.io/Dr.J/)
